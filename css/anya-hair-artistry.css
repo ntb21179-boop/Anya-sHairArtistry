@@ -1,0 +1,205 @@
+
+
+
+/* reseting style sheets*/ 
+
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+/* header styles */
+header { 
+    background-color: brown;
+    color: white;
+    padding: 25px;
+}
+
+
+header {
+    width: 100%;
+}
+
+/* navigation: use flexbox so we can control spacing with gap */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 28px;       /* spacing between list items */
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+}
+*booknow {
+    border-radius: 20px;
+    background-color: black;
+}
+
+
+
+nav ul li {
+    list-style-type: none;
+    padding: 5px 0; 
+}
+
+nav ul li a {
+    color: white; 
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover{
+    color: orange;
+}
+Book Now { 
+ font-size: 20px;
+ padding: 10px 36px;
+ border-radius: 40px;
+ background-color: black;
+}
+/* Portfolio Display */
+
+section {
+    width: 80%;
+    max-width: 1200px; /* keep content readable on large screens */
+    margin: 20px auto; /* center the section block */
+}
+
+div {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+img {
+    width: 70%;
+    /* margin: 10px; */
+}
+
+/* gallery styles: grid layout and image overrides (more specific than global img) */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    align-items: stretch;
+    margin: 10px 0 40px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Services page styles */
+.services {
+    width: 80%;
+    max-width: 1200px;
+    margin: 24px auto;
+    padding-bottom: 20px;
+}
+
+.services .note {
+    font-style: italic;
+    margin-bottom: 14px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.service-category {
+    background: #fff;
+    padding: 14px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.service-category h3 {
+    margin-bottom: 8px;
+}
+
+.service-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-category li {
+    padding: 6px 0;
+    border-bottom: 1px dashed rgba(0,0,0,0.06);
+}
+
+.service-category li:last-child {
+    border-bottom: none;
+}
+
+/* Form inputs: make the #body field wider and responsive */
+#body,
+form input[type="text"],
+form textarea {
+    display: block;
+    width: 96%;           /* nearly full width of the section/container */
+    max-width: 1000px;    /* cap so it doesn't become too large on wide screens */
+    box-sizing: border-box;
+    padding: 10px 12px;   /* comfortable inner spacing */
+    font-size: 16px;
+    margin: 10px auto;    /* center within container and give vertical spacing */
+}
+
+/* Button */
+
+button {
+    background-color: black;
+    font-size: 28px; 
+    color: white;           
+    padding: 10px 36px;        
+    border-radius: 40px;      
+    display: block;            /* allow margin:auto centering */
+    width: 90%;                /* make the button much wider relative to its container */
+    max-width: 850px;         /* avoid being absurdly wide on very large screens */
+    box-sizing: border-box;
+    margin: 18px auto;         /* center horizontally and keep vertical spacing */
+    text-align: center;
+}
+
+/* utility class to center a specific button without affecting all buttons */
+.center-button {
+    display: block;
+    margin: 20px auto;
+}
+
+
+/* Reference for slideshow: */
+
+/* #slider-container { 
+    display: flex;
+    overflow-x: auto; 
+    gap: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+#slider-container img {
+    width: 300px; 
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#slider-container buttom {
+    align-self: center;
+    padding: 10px 20px;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+} */
